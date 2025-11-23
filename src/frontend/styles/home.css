@@ -1,0 +1,93 @@
+@import url("root.css");
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--darkgray);
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.hero-text {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: var(--white);
+  max-width: 600px;
+}
+
+/* Стили для кнопок-ссылок */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-buttons a {
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    transform 0.2s,
+    border-color 0.3s;
+  display: inline-block;
+  border: 2px solid var(--button-light-border);
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  background-color: var(--black);
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  background-color: var(--lightgray);
+  transform: translateY(-2px);
+  border: 2px solid var(--button-light-border);
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}

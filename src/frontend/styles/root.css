@@ -1,0 +1,9 @@
+:root {
+  --black: #191919;
+  --white: rgb(230, 230, 230);
+  --lightgray: #303030;
+  --darkgray: #222;
+  --light: #797979;
+  --gray: #666666;
+  --button-light-border: rgb(179, 179, 179);
+}
