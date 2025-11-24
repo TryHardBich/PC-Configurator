@@ -1,0 +1,93 @@
+.builder-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.builder-main {
+  flex: 1;
+  background-color: var(--darkgray);
+  padding: 30px 20px;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.builder-summary {
+  font-size: 27px;
+}
+.builder-section,
+.builder-summary {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.builder-section h2,
+.builder-summary h2 {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.builder-section select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--button-light-border);
+  background-color: #111;
+  color: var(--white);
+}
+
+.builder-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.builder-summary li {
+  margin-bottom: 5px;
+}
+
+.builder-total {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+/* Кнопки фильтров */
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    transform 0.2s,
+    border-color 0.3s;
+  display: inline-block;
+  border: 2px solid var(--button-light-border);
+  background-color: var(--black);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.filter-btn:hover {
+  background-color: var(--lightgray);
+  transform: translateY(-2px);
+  border: 2px solid var(--button-light-border);
+}
+
+.filter-btn.active {
+  background-color: var(--darkgray);
+  color: var(--white);
+  border-color: var(--button-light-border);
+}

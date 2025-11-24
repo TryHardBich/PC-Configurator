@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <header className="header">
-        <h1 className="logo"> Configurator</h1>
+        <h1 className="logo">ФЕДЯ УСТАЛ ЭТО 1 ДЕЛАТЬ ПОМОГИТЕ</h1>
       </header>
 
       <section className="hero">
